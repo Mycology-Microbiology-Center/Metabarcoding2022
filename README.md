@@ -1,6 +1,8 @@
 # Metabarcoding: from Lab to Bioinformatics 
 University of Tartu, International Summer University, Tartu, 1-7 August, 2022
 
+https://mycology-microbiology-center.github.io/Metabarcoding2022/
+
 https://ut.ee/en/content/metabarcoding-lab-bioinformatics
 
 High-throughput metabarcoding methods have become a routine analysis tool in biodiversity research and ecology in general. This course will cover the principles of metabarcoding workflow, from the laboratory analyses to bioinformatic analyses of the high-throughput sequencing data.
