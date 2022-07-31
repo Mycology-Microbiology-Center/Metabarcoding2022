@@ -5,4 +5,6 @@ Data is available here:<br/>
 [https://github.com/Mycology-Microbiology-Center/Metabarcoding2022/tree/main/data](https://github.com/Mycology-Microbiology-Center/Metabarcoding2022/tree/main/data)<br/>
 
 For the evaluation of the results, please fill out the following form:<br/>
+[https://forms.gle/NjBm1KSYit8mGRMq8](https://forms.gle/NjBm1KSYit8mGRMq8)<br/>
+
 
