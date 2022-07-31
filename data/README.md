@@ -1,7 +1,5 @@
 # Data for the `Metabarcoding: from Lab to Bioinformatics` course
 
-**DB** directory contains databases for taxonomy annotation.
-
 ## ITS2
 
 **MiSeq_Fungi** directory contains sequences of soil fungi.
@@ -21,3 +19,11 @@ Forward primer `GTGCCAGCMGCCGCGGTAA`<br/>
 Reverse primer `GGACTACHVGGGTWTCTAAT`<br/>
 
 **NB!** Primers were already trimmed from the sequences!
+
+## Databases for taxonomy annotation
+
+**DB** directory contains databases for taxonomy annotation.
+
+For ITS, use `UNITE_Fungal_ITS.fa` (Nilsson et al., 2019; [DOI:10.1093/nar/gky1022](https://academic.oup.com/nar/article/47/D1/D259/5146189)). The file was prepared by Andrea Telatin for the [Dadaist2 pipeline](https://quadram-institute-bioscience.github.io/dadaist2/) ([file source](https://github.com/quadram-institute-bioscience/dadaist2/releases/download/v0.7.3/uniref.fa.gz)).
+
+For 16S data, you may use Silva v.138.1 database ([download link](https://zenodo.org/record/4587955); Quast et al, 2013; [DOI:10.1093/nar/gks1219](https://academic.oup.com/nar/article/41/D1/D590/1069277)).
