@@ -1,5 +1,4 @@
-## Metabarcoding: from Lab to Bioinformatics
-**University of Tartu, 2022**
+## Individual projects
 
 During a hands-on section, you may perform a forensic study and identify samples of unknown origin using the information about the species composition inferred using environmental DNA sequencing.
 

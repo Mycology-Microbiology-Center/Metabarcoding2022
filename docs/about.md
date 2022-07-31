@@ -8,7 +8,7 @@
 | Coordinating unit at UT | Chair of Mycology, Institute of Ecology and Earth Sciences      |
 | Focus area              | Biology, Ecology, Mycology, and Microbiology                    |
 | Study Field             | Biology, Mycology, Microbiology, and Ecology                    |
-| Format 	  	            | Practical and theoretical sessions                              |
+| Format 	  	          | Practical and theoretical sessions                              |
 | Location                | Tartu, Estonia                                                  |
 | Course dates            | 1-7 August 2022                                                 |
 | Course Leader           | Dr. Niloufar Hagh-Doust, Research fellow at University of Tartu |
@@ -16,6 +16,9 @@
 | Study group             | MSc/PhD and Post-doc                                            |
 | Language                | English                                                         |
 
+<br/>
+<br/>
+<br/>
 
 ### Lecturers:
 
