@@ -16,7 +16,7 @@ Reverse primer `TCCTCCGCTTATTGATATGC` (`ITS4`; White et al., 1990; [DOI:10.1016/
 
 **16S** data (mice fecal microbiome, Kozich et al., 2013; [DOI:10.1128/AEM.01043-13](https://journals.asm.org/doi/10.1128/AEM.01043-13)) could be [downloaded from here](https://mothur.s3.us-east-2.amazonaws.com/wiki/miseqsopdata.zip). See also [`mothur` MiSeq SOP](https://mothur.org/wiki/miseq_sop/).
 
-Amplicons of the V4 region of the 16S rRNA gene were obtained with the following primers (for details, see [here](https://github.com/SchlossLab/MiSeq_WetLab_SOP/blob/master/MiSeq_WetLab_SOP.md):
+Amplicons of the V4 region of the 16S rRNA gene were obtained with the following primers (for details, see [here](https://github.com/SchlossLab/MiSeq_WetLab_SOP/blob/master/MiSeq_WetLab_SOP.md)):<br/>
 Forward primer `GTGCCAGCMGCCGCGGTAA`<br/>
 Reverse primer `GGACTACHVGGGTWTCTAAT`<br/>
 
