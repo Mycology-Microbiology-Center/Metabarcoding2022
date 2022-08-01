@@ -94,3 +94,37 @@ To run the program on the HPC cluster you should:
 When the job finishes, you may retrieve the output files.
 
 <sup>\*</sup> Unless specified otherwise, on the Rocket cluster, all jobs will be allocated 1 node with 1 CPU core and 2 GB of memory.
+
+### Batch script
+
+Here is a basic batch script which that contains a minimal number of SLURM options:
+```bash
+#!/bin/bash -l
+#SBATCH --job-name=my_job
+#SBATCH --cpus-per-task=4
+#SBATCH --nodes=1
+#SBATCH --mem=10G
+#SBATCH --partition amd
+#SBATCH --time=48:00:00
+
+## If needed, you may load the required modules here
+# module load X
+
+## Run your code
+some_program -i input.data -o output_1.data --threads 4
+some_script.sh output_1.data > output_2.data
+echo "Done" > output.log
+```
+
+The syntax for the SLURM directive in a script is `#SBATCH <flag>`, where `<flag>` could be:<br/>
+- `--job-name`, the name of the job;
+- `--cpus-per-task`, the number of CPUs each task should have (e.g., 4 cores);
+- `--nodes`, requested number of nodes (each node could have multiple CPUs);
+- `--mem`, requested amount of RAM (e.g., 10 gigabytes);
+- `--partition`, the partition on which the job shall run
+- `--time`, the requested time for the job (e.g., 48 hours).
+
+To submit a job, save the code above to a file (e.g., `my_job.sh`) and run:
+```bash
+sbatch my_job.sh
+```
