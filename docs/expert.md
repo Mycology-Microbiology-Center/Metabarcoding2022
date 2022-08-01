@@ -128,3 +128,14 @@ To submit a job, save the code above to a file (e.g., `my_job.sh`) and run:
 ```bash
 sbatch my_job.sh
 ```
+
+### Scheduling a task directly from the command line
+
+If the command you wish to run is relatively simple, you may run it without a batch script, but in that case, you should provide SLURM directives as arguments to the `sbatch` command:
+```bash
+sbatch \
+  --job-name=my_job \
+  --ntasks-per-node=4 --nodes=1 --mem=10G -p amd \
+  --time=48:00:00 \
+  some_script.sh input.data
+```
