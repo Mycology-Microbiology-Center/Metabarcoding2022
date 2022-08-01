@@ -3,7 +3,7 @@
 
 ## Sequence quality control
 
-**QC** directory contains DNA reads obtained using different sequencing instruments - Illumina MiSeq and NovaSeq, and PacBio Sequel II.
+**QC** directory contains DNA reads obtained using different sequencing instruments - Illumina MiSeq and NovaSeq 6000, MGI-Tech DNBSEQ-G400RS, and PacBio Sequel II.
 
 ## ITS2
 
