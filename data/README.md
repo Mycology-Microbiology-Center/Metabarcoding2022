@@ -5,14 +5,43 @@
 
 **QC** directory contains DNA reads obtained using different sequencing instruments - Illumina MiSeq and NovaSeq 6000, MGI-Tech DNBSEQ-G400RS, Roche/454 GS FLX+, Oxford Nanopore MinION, and PacBio Sequel II.
 
+To download data from the command line, run:
+```bash
+mkdir -p QC
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/QC/MiSeq_R{1,2}.fq.gz -P QC
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/QC/NovaSeq_R{1,2}.fq.gz -P QC
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/QC/DNBSeq_R{1,2}.fq.gz -P QC
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/QC/Nanopore.fq.gz -P QC
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/QC/454.fq.gz -P QC
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/QC/PacBio.fq.gz -P QC
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/QC/QC.md5 -P QC
+```
+
+
 ## ITS2
 
 **MiSeq_Fungi** directory contains sequences of soil fungi.
 
-**Set01**, **Set02**, and **Set03** are the sample sets for individual projects.
-
 Forward primer `GTGARTCATCGAATCTTTG` (`fITS7`; Ihrmark et al., 2012; [DOI:10.1111/j.1574-6941.2012.01437.x](https://academic.oup.com/femsec/article/82/3/666/492046))<br/>
 Reverse primer `TCCTCCGCTTATTGATATGC` (`ITS4`; White et al., 1990; [DOI:10.1016/B978-0-12-372180-8.50042-1](https://www.sciencedirect.com/science/article/pii/B9780123721808500421))<br/>
+
+To download data from the command line, run:
+```bash
+mkdir -p MiSeq_Fungi
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/MiSeq_Fungi/M{C,P}_1__R{1,2}.fastq.gz -P MiSeq_Fungi
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/MiSeq_Fungi/OC_{1..4}__R{1,2}.fastq.gz -P MiSeq_Fungi
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/MiSeq_Fungi/OP_{1..3}__R{1,2}.fastq.gz -P MiSeq_Fungi
+```
 
 
 ## 16S
@@ -31,4 +60,26 @@ Reverse primer `GGACTACHVGGGTWTCTAAT`<br/>
 
 For ITS, use `UNITE_Fungal_ITS.fa` (Nilsson et al., 2019; [DOI:10.1093/nar/gky1022](https://academic.oup.com/nar/article/47/D1/D259/5146189)). The file was prepared by Andrea Telatin for the [Dadaist2 pipeline](https://quadram-institute-bioscience.github.io/dadaist2/) ([file source](https://github.com/quadram-institute-bioscience/dadaist2/releases/download/v0.7.3/uniref.fa.gz)).
 
+To donload the database from the command line, run:
+```bash
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/DB/UNITE_Fungal_ITS.fa
+```
+
 For 16S data, you may use Silva v.138.1 database ([download link](https://zenodo.org/record/4587955); Quast et al, 2013; [DOI:10.1093/nar/gks1219](https://academic.oup.com/nar/article/41/D1/D590/1069277)).
+
+
+## Data for individual projects
+
+**Set01**, **Set02**, and **Set03** are the sample sets for individual projects.
+
+To download data from the command line, run:
+```bash
+mkdir -p Set0{1..3}
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/Set01/Set01_s{1..5}_R{1,2}.fastq.gz -P Set01
+
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/Set02/Set02_s{1..5}_R{1,2}.fastq.gz -P Set02
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/Set03/Set03_s{1..5}_R{1,2}.fastq.gz -P Set03
+```
