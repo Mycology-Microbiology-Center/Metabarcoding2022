@@ -139,3 +139,21 @@ sbatch \
   --time=48:00:00 \
   some_script.sh input.data
 ```
+
+### Job management
+
+When the job is submitted, you may monitor the queue and see the status of your running tasks:
+```bash
+squeue -u $USER
+```
+The most common job state codes (column `ST`) are:<br/>
+`PD` =   PENDING<br/>
+`R`  =   RUNNING<br/>
+`S`  =   SUSPENDED<br/>
+
+To cancel the job, use:
+```bash
+scancel <JOBID>        # by job ID (e.g., where <JOBID> is 31727880 - see the column JOBID in "squeue" output)
+scancel --name my_job  # one or more jobs by name
+scancel -u $USER       # all jobs for a current user
+```
