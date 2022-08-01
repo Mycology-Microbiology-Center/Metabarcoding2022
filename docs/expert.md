@@ -68,3 +68,14 @@ To switch to the base environment, run:
 ```bash
 conda deactivate
 ```
+
+### Module system
+
+Alternatively, if the software you wish to use is pre-installed on the HPC cluster, you may load it as an environment module.<br/>
+To list all available modules, use `module avail` command (scroll the list with `space` button, press `q` to quit).<br/>
+To search for a particular module, use e.g. `module -r spider '.*singularity.*'`.<br/>
+If the required software was found, you need to load the module, e.g.:
+```bash
+module load any/singularity/3.7.3
+```
+
