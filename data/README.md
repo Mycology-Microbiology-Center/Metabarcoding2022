@@ -78,7 +78,6 @@ mkdir -p Set0{1..3}
 
 wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/Set01/Set01_s{1..5}_R{1,2}.fastq.gz -P Set01
 
-
 wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/Set02/Set02_s{1..5}_R{1,2}.fastq.gz -P Set02
 
 wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/Set03/Set03_s{1..5}_R{1,2}.fastq.gz -P Set03
