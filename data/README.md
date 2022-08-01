@@ -1,5 +1,10 @@
 # Data for the `Metabarcoding: from Lab to Bioinformatics` course
 
+
+## Sequence quality control
+
+**QC** directory contains DNA reads obtained using different sequencing instruments - Illumina MiSeq and NovaSeq, and PacBio Sequel II.
+
 ## ITS2
 
 **MiSeq_Fungi** directory contains sequences of soil fungi.
