@@ -30,3 +30,22 @@ To end your session on the HPC cluster, run:
 ```bash
 exit
 ```
+
+## Setup working environment on HPC cluster
+
+In general, one needs admin rights to install the software on HPC clusters. However, users may install software into their home directory where they have write permissions. To make life easier, you may use `Conda` - a package manager which helps you find and install the software and its dependencies.<br/>
+To install [Miniconda](https://docs.conda.io/en/latest/index.html), run the following code:
+```bash
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
+bash ~/miniconda.sh -b -p $HOME/miniconda
+~/miniconda/bin/conda init bash
+source ~/.bashrc
+conda update --all --yes -c bioconda -c conda-forge
+conda install --yes -c conda-forge mamba
+```
+
+To install the software (e.g., [`seqkit`](https://bioinf.shenwei.me/seqkit/) program), run:
+```bash
+mamba install -c bioconda seqkit
+```
+
