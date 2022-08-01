@@ -49,3 +49,22 @@ To install the software (e.g., [`seqkit`](https://bioinf.shenwei.me/seqkit/) pro
 mamba install -c bioconda seqkit
 ```
 
+
+### Conda environments
+
+If the software you wish to use could not be installed in the base (default) environment due to the conflict of versions, or you want to use a specific version of the program, or just want to keep it independent, you may create a separate environment with:
+```bash
+mamba create --name VSEARCHENV -c bioconda -c conda-forge vsearch=2.21.1 blast=2.13.0
+conda activate VSEARCHENV           # swith to the new environment we've created
+```
+
+Verify which software versions are installed:
+```bash
+vsearch --version
+blastn -version
+```
+
+To switch to the base environment, run:
+```bash
+conda deactivate
+```
