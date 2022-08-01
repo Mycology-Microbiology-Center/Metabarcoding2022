@@ -16,7 +16,7 @@ To copy a file or multiple files **to the HPC cluster**, use:
 scp yourfile koljalg@rocket.hpc.ut.ee:~/yourfile   # single file
 scp file1 file2 koljalg@rocket.hpc.ut.ee:~/        # multiple files
 ```
-To copy file **from HPC cluster** (e.g., `yourfile` from home directory on HPC to home directory on your computer), use:
+To copy file **from the HPC cluster** (e.g., `yourfile` from home directory on HPC to home directory on your computer), use:
 ```bash
 scp koljalg@rocket.hpc.ut.ee:~/yourfile ~/yourfile
 ```
@@ -79,3 +79,18 @@ If the required software was found, you need to load the module, e.g.:
 module load any/singularity/3.7.3
 ```
 
+
+## Scheduling jobs on the HPC cluster
+
+The Slurm Workload Manager, a.k.a. Simple Linux Utility for Resource Management (SLURM), is used to share the HPC resources between users.
+
+Please note that users log in from their computers to the cluster **head node**.<br/>
+**Do not run the analysis on the head node!**<br/>
+You should use it only to schedule the tasks that would be distributed on the **cluster nodes**.
+
+To run the program on the HPC cluster you should:
+- Prepare a batch script with directives to SLURM about the number of CPUs<sup>\*</sup>, amount of RAM<sup>\*</sup>, and time duration requested for the job, along with commands which perform the desired calculations;<br/>
+- Submit the script to the batch queue. SLURM will evaluate the task's priority and start executing the job when it reaches the front of the queue.<br/>
+When the job finishes, you may retrieve the output files.
+
+<sup>\*</sup> Unless specified otherwise, on the Rocket cluster, all jobs will be allocated 1 node with 1 CPU core and 2 GB of memory.
