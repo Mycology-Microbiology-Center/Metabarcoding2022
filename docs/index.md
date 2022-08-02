@@ -4,6 +4,8 @@
 [Data used during the course](https://github.com/Mycology-Microbiology-Center/Metabarcoding2022/tree/main/data)<br/>
 ["Expert mode" commands](expert.md)<br/>
 [Individual projects](projects.md)<br/>
+[HPC basics](hpc.md)<br/>
+
 [Slides (will be released after the course)](slides.md)<br/>
 
 [PipeCraft2 manual](https://pipecraft2-manual.readthedocs.io/en/latest/index.html)<br/>
