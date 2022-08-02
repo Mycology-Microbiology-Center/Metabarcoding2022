@@ -77,6 +77,11 @@ zgrep "GTGAATCATCGAATCTTTG" "MiSeq_R1.fq.gz" \
 
 ## Download example data
 
+If you do not have the `wget` program installed in the container, run:
+```bash
+apt update && apt install -y wget
+```
+
 Sequences obtained with different instruments (for QC):
 ```bash
 mkdir -p QC
