@@ -54,6 +54,12 @@ Reverse primer `GGACTACHVGGGTWTCTAAT`<br/>
 
 **NB!** Primers were already trimmed from the sequences!
 
+To download data from the command line, run:
+```bash
+wget https://mothur.s3.us-east-2.amazonaws.com/wiki/miseqsopdata.zip
+unzip miseqsopdata.zip
+```
+
 ## Databases for taxonomy annotation
 
 **DB** directory contains databases for taxonomy annotation.
