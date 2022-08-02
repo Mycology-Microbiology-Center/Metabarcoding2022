@@ -180,7 +180,7 @@ for i in chimera_Filtered_out/*.fasta; do
   | vsearch \
     --cluster_unoise - \
     --strand both \
-    --minsize 8 \
+    --minsize 4 \
     --unoise_alpha 2 \
     --fasta_width 0 \
     --sizein --sizeout \
