@@ -11,6 +11,55 @@ Parameter `-v` allows mounting (attaching) a directory on a host system into a c
 
 **Windows users:** If your data are located in `C:\Users\koljalg\Downloads`, then specify the path as `/c/Users/koljalg/Downloads`.
 
+
+## Command line basics
+
+Changing the working directory and listing files:
+```bash
+# Change the working directory to your home directory
+cd ~
+cd $HOME   # the same
+
+# Change working directory to `/data`
+cd /data
+
+# List files
+ls
+
+# List files and display results in a long listing format (each file on a separate row)
+ls -l
+
+# List files in a long format, sort by file size
+ls -l -S
+```
+
+Checking data integrity; Wildcards, parameter expansion, and output redirection:
+```bash
+# Verify the integrity of the files
+cd /data/QC
+cat QC.md5
+md5sum -c QC.md5
+
+# Calculate MD5 checksums for all `fq.gz` files in the current directory,
+# Write the results into `Checksum.md5` file
+md5sum *.fq.gz > Checksum.md5
+
+# Calculate MD5 checksums only for two files - `MiSeq_R1.fq.gz` and `MiSeq_R2.fq.gz`
+# use parameter expansion
+md5sum MiSeq_R{1,2}.fq.gz
+```
+
+Matching text patterns, pipe operator:
+```bash
+# View the contents of the file. To exit, press the q key
+less QC.md5
+
+# Look for "MiSeq" string in the file
+grep "MiSeq" QC.md5
+
+# Count the number of lines in a file that contains "MiSeq" text
+grep "MiSeq" QC.md5 | wc -l
+```
 ## HPC basics
 
 For demonstration purposes, we will use the [Rocket Cluster](https://hpc.ut.ee/services/HPC-services/Rocket) of the University of Tartu.
