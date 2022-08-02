@@ -163,8 +163,8 @@ vsearch \
 
 Count how many zOTUs (zero-radius OTUs) were detected in the denoized sample and how many sequences were discarded:
 ```bash
-grep "^>" chimera_Filtered_out/MC_1_.fasta | wc -l  # input data
-grep "^>" MC_1_unoise.fasta                | wc -l  # denoized data
+grep -c "^>" MC_1_dereplicated.fasta  # input data
+grep -c "^>" MC_1_unoise.fasta        # denoized data
 ```
 
 To go through all samples, we can write a for-loop:
