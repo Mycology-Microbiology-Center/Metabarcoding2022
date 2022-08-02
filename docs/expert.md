@@ -74,6 +74,55 @@ zgrep "GTGAATCATCGAATCTTTG" "MiSeq_R1.fq.gz" \
    | sort | uniq \
    > some_sequences.txt
 ```
+
+## Download example data
+
+Sequences obtained with different instruments (for QC):
+```bash
+mkdir -p QC
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/QC/MiSeq_R{1,2}.fq.gz -P QC
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/QC/NovaSeq_R{1,2}.fq.gz -P QC
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/QC/DNBSeq_R{1,2}.fq.gz -P QC
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/QC/Nanopore.fq.gz -P QC
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/QC/454.fq.gz -P QC
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/QC/PacBio.fq.gz -P QC
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/QC/QC.md5 -P QC
+```
+
+MiSeq data (soil fungi):
+```bash
+mkdir -p MiSeq_Fungi
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/MiSeq_Fungi/M{C,P}_1__R{1,2}.fastq.gz -P MiSeq_Fungi
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/MiSeq_Fungi/OC_{1..4}__R{1,2}.fastq.gz -P MiSeq_Fungi
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/MiSeq_Fungi/OP_{1..3}__R{1,2}.fastq.gz -P MiSeq_Fungi
+```
+
+Database for taxonomy annotation:
+```bash
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/DB/UNITE_Fungal_ITS.fa
+```
+
+Data for individual projects:
+```bash
+mkdir -p Set0{1..3}
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/Set01/Set01_s{1..5}_R{1,2}.fastq.gz -P Set01
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/Set02/Set02_s{1..5}_R{1,2}.fastq.gz -P Set02
+
+wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/Set03/Set03_s{1..5}_R{1,2}.fastq.gz -P Set03
+```
+
 ## HPC basics
 
 For demonstration purposes, we will use the [Rocket Cluster](https://hpc.ut.ee/services/HPC-services/Rocket) of the University of Tartu.
