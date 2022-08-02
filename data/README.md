@@ -58,9 +58,9 @@ Reverse primer `GGACTACHVGGGTWTCTAAT`<br/>
 
 **DB** directory contains databases for taxonomy annotation.
 
-For ITS, use `UNITE_Fungal_ITS.fa` (Nilsson et al., 2019; [DOI:10.1093/nar/gky1022](https://academic.oup.com/nar/article/47/D1/D259/5146189)). The file was prepared by Andrea Telatin for the [Dadaist2 pipeline](https://quadram-institute-bioscience.github.io/dadaist2/) ([file source](https://github.com/quadram-institute-bioscience/dadaist2/releases/download/v0.7.3/uniref.fa.gz)).
+For ITS, use `UNITE_Fungal_ITS.fa` ([https://unite.ut.ee/repository.php](https://unite.ut.ee/repository.php); Nilsson et al., 2019; [DOI:10.1093/nar/gky1022](https://academic.oup.com/nar/article/47/D1/D259/5146189)). The file was prepared by Andrea Telatin for the [Dadaist2 pipeline](https://quadram-institute-bioscience.github.io/dadaist2/) ([file source](https://github.com/quadram-institute-bioscience/dadaist2/releases/download/v0.7.3/uniref.fa.gz)).
 
-To donload the database from the command line, run:
+To download the UNITE database from the command line, run:
 ```bash
 wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/DB/UNITE_Fungal_ITS.fa
 ```
