@@ -154,7 +154,8 @@ Run UNOISE for a single sample:
 vsearch \
   --cluster_unoise MC_1_dereplicated.fasta \
   --strand both \
-  --minsize 8 \
+  --minsize 4 \
+  --unoise_alpha 2 \
   --fasta_width 0 \
   --sizein --sizeout \
   --centroids MC_1_unoise.fasta
