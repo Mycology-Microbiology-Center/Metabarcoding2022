@@ -128,6 +128,70 @@ wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcodin
 wget https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/data/Set03/Set03_s{1..5}_R{1,2}.fastq.gz -P Set03
 ```
 
+
+## UNOISE pipeline
+
+UNOISE is an algorithm for denoising (error-correcting) Illumina amplicon reads (Edgar, 2016; [DOI:10.1101/081257](https://www.biorxiv.org/content/10.1101/081257v1)). Initially, it was implemented in [USEARCH](https://drive5.com/usearch/) program, but now it's also available in [VSEARCH](https://github.com/torognes/vsearch) (Rognes et al., 2016; [DOI:10.7717/peerj.2584](https://peerj.com/articles/2584/)).
+
+Start a new Docker container with VSEARCH (**NB!** remember to change the path to the directory with input data):
+```bash
+docker run -it -v /c/Metabarcoding:/data pipecraft/vsearch:2.18
+cd /data
+```
+
+As detecting sequencing and PCR errors require information on the read abundances, we must dereplicate the data first. We will use chimera-filtered reads from the previous results.
+```bash
+vsearch \
+  --derep_fulllength chimera_Filtered_out/MC_1_.fasta \
+  --output MC_1_dereplicated.fasta \
+  --fasta_width 0 \
+  --relabel_sha1  --sizeout
+```
+
+Run UNOISE for a single sample:
+
+```bash
+vsearch \
+  --cluster_unoise MC_1_dereplicated.fasta \
+  --strand both \
+  --minsize 8 \
+  --fasta_width 0 \
+  --sizein --sizeout \
+  --centroids MC_1_unoise.fasta
+```
+
+Count how many zOTUs (zero-radius OTUs) were detected in the denoized sample and how many sequences were discarded:
+```bash
+grep "^>" chimera_Filtered_out/MC_1_.fasta | wc -l  # input data
+grep "^>" MC_1_unoise.fasta                | wc -l  # denoized data
+```
+
+To go through all samples, we can write a for-loop:
+```bash
+mkdir -p UNOISE
+
+for i in chimera_Filtered_out/*.fasta; do
+
+  vsearch \
+    --derep_fulllength ${i} \
+    --output - \
+    --fasta_width 0 \
+    --relabel_sha1  --sizeout \
+  | vsearch \
+    --cluster_unoise - \
+    --strand both \
+    --minsize 8 \
+    --fasta_width 0 \
+    --sizein --sizeout \
+    --centroids UNOISE/$(basename ${i})
+
+done
+```
+
+After UNOISE, you may proceed with OTU clustering using `PipeCraft2` GUI.
+
+
+
 ## HPC basics
 
 For demonstration purposes, we will use the [Rocket Cluster](https://hpc.ut.ee/services/HPC-services/Rocket) of the University of Tartu.
