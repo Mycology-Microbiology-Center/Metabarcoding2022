@@ -60,6 +60,20 @@ grep "MiSeq" QC.md5
 # Count the number of lines in a file that contains "MiSeq" text
 grep "MiSeq" QC.md5 | wc -l
 ```
+
+More pipes:
+```bash
+# Find and highlight primer motif in the sequences
+zgrep "GTGAATCATCGAATCTTTG" --color=always "MiSeq_R1.fq.gz" | less -R
+
+# Find sequences containing a primer motif,
+# Exclude sequences with the other motif,
+# Select unique sequences, and write the results into a text file
+zgrep "GTGAATCATCGAATCTTTG" "MiSeq_R1.fq.gz" \
+   | grep -v "TAAGCGGCGGACT" \
+   | sort | uniq \
+   > some_sequences.txt
+```
 ## HPC basics
 
 For demonstration purposes, we will use the [Rocket Cluster](https://hpc.ut.ee/services/HPC-services/Rocket) of the University of Tartu.
