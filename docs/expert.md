@@ -1,5 +1,16 @@
 # "Expert mode" commands
 
+
+## Docker
+
+To open a shell (command-line interface) of the Docker container (e.g., using `ubuntu` image), run:
+```bash
+docker run -it -v /my_laptop/data:/container/data ubuntu
+```
+Parameter `-v` allows mounting (attaching) a directory on a host system into a container. A value that should be passed to the `-v` parameter consists of two parts delimited by a colon symbol: a directory on a host system (e.g., `/my_laptop/data`) and a directory in the container (`/container/data`).
+
+**Windows users:** If your data are located in `C:\Users\koljalg\Downloads`, then specify the path as `/c/Users/koljalg/Downloads`.
+
 ## HPC basics
 
 For demonstration purposes, we will use the [Rocket Cluster](https://hpc.ut.ee/services/HPC-services/Rocket) of the University of Tartu.
