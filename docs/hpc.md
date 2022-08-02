@@ -1,7 +1,4 @@
-
-
-
-## HPC basics
+# HPC basics
 
 For demonstration purposes, we will use the [Rocket Cluster](https://hpc.ut.ee/services/HPC-services/Rocket) of the University of Tartu.
 
@@ -32,7 +29,7 @@ To end your session on the HPC cluster, run:
 exit
 ```
 
-## Setup working environment on HPC cluster
+# Setup working environment on HPC cluster
 
 In general, one needs admin rights to install the software on HPC clusters. However, users may install software into their home directory where they have write permissions. To make life easier, you may use `Conda` - a package manager which helps you find and install the software and its dependencies.<br/>
 To install [Miniconda](https://docs.conda.io/en/latest/index.html), run the following code:
@@ -51,7 +48,7 @@ mamba install -c bioconda seqkit
 ```
 
 
-### Conda environments
+## Conda environments
 
 If the software you wish to use could not be installed in the base (default) environment due to the conflict of versions, or you want to use a specific version of the program, or just want to keep it independent, you may create a separate environment with:
 ```bash
@@ -70,7 +67,7 @@ To switch to the base environment, run:
 conda deactivate
 ```
 
-### Module system
+## Module system
 
 Alternatively, if the software you wish to use is pre-installed on the HPC cluster, you may load it as an environment module.<br/>
 To list all available modules, use `module avail` command (scroll the list with `space` button, press `q` to quit).<br/>
@@ -81,7 +78,7 @@ module load any/singularity/3.7.3
 ```
 
 
-## Scheduling jobs on the HPC cluster
+# Scheduling jobs on the HPC cluster
 
 The Slurm Workload Manager, a.k.a. Simple Linux Utility for Resource Management (SLURM), is used to share the HPC resources between users.
 
@@ -96,7 +93,7 @@ When the job finishes, you may retrieve the output files.
 
 <sup>\*</sup> Unless specified otherwise, on the Rocket cluster, all jobs will be allocated 1 node with 1 CPU core and 2 GB of memory.
 
-### Batch script
+## Batch script
 
 Here is a basic batch script which that contains a minimal number of SLURM options:
 ```bash
@@ -130,7 +127,7 @@ To submit a job, save the code above to a file (e.g., `my_job.sh`) and run:
 sbatch my_job.sh
 ```
 
-### Scheduling a task directly from the command line
+## Scheduling a task directly from the command line
 
 If the command you wish to run is relatively simple, you may run it without a batch script, but in that case, you should provide SLURM directives as arguments to the `sbatch` command:
 ```bash
@@ -141,7 +138,7 @@ sbatch \
   some_script.sh input.data
 ```
 
-### Job management
+## Job management
 
 When the job is submitted, you may monitor the queue and see the status of your running tasks:
 ```bash
