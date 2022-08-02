@@ -181,6 +181,7 @@ for i in chimera_Filtered_out/*.fasta; do
     --cluster_unoise - \
     --strand both \
     --minsize 8 \
+    --unoise_alpha 2 \
     --fasta_width 0 \
     --sizein --sizeout \
     --centroids UNOISE/$(basename ${i})
