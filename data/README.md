@@ -78,6 +78,10 @@ For 16S data, you may use Silva v.138.1 database ([download link](https://zenodo
 
 **Set01**, **Set02**, and **Set03** are the sample sets for individual projects.
 
+The primers are the same as in `MiSeq_Fungi` data:<br/>
+Forward primer `GTGARTCATCGAATCTTTG`<br/>
+Reverse primer `TCCTCCGCTTATTGATATGC`<br/>
+
 To download data from the command line, run:
 ```bash
 mkdir -p Set0{1..3}
