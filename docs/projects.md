@@ -1,6 +1,7 @@
 ## Individual projects
 
-During a hands-on section, you may perform a forensic study and identify samples of unknown origin using the information about the species composition inferred using environmental DNA sequencing.
+The story behind:<br/>
+As an expert in metabarcoding, you were invited to perform a forensic study and identify samples of unknown origin using the information about the species composition inferred using environmental DNA sequencing.
 
 For this purpose, please select a set of samples (or all of them) available here:<br/>
 [https://github.com/Mycology-Microbiology-Center/Metabarcoding2022/tree/main/data](https://github.com/Mycology-Microbiology-Center/Metabarcoding2022/tree/main/data)<br/>
