@@ -1,6 +1,5 @@
 # "Expert mode" commands
 
-
 ## Docker
 
 To open a shell (command-line interface) of the Docker container (e.g., using `ubuntu` image), run:
@@ -9,15 +8,16 @@ docker run -it -v /my_laptop/data:/data ubuntu
 ```
 Parameter `-v` allows mounting (attaching) a directory on a host system into a container. A value that should be passed to the `-v` parameter consists of two parts delimited by a colon symbol: a directory on a host system (e.g., `/my_laptop/data`) and a directory in the container (`/data`).
 
+As the official Ubuntu image at the Docker Hub is very lightweight and lacks some programs we need for the following demonstration, we will use another image [`osexp2000/ubuntu-with-utils`](https://hub.docker.com/r/osexp2000/ubuntu-with-utils).
 
 For example, to mount `C:\Users\koljalg\Downloads` on the container, run:
 ```bash
-docker run -it -v C:\Users\koljalg\Downloads:/data ubuntu
+docker run -it -v C:\Users\koljalg\Downloads:/data osexp2000/ubuntu-with-utils
 ```
 
 If the path to the directory contains whitespace, it needs to be enclosed in quotes. E.g.,
 ```bash
-docker run -it -v '"/c/Users/koljalg/My Documents":/data' ubuntu
+docker run -it -v '"/c/Users/koljalg/My Documents":/data' osexp2000/ubuntu-with-utils
 ```
 
 **Windows users:** If it does not work for you, try to replace the backslash signs (`\`) with the slash (`/`) characters. E.g., if your data are located in `C:\Users\koljalg\Downloads`, then specify the path as `/c/Users/koljalg/Downloads`.
