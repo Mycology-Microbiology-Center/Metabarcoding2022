@@ -146,7 +146,7 @@ UNOISE is an algorithm for denoising (error-correcting) Illumina amplicon reads 
 
 Start a new Docker container with VSEARCH (**NB!** remember to change the path to the directory with input data):
 ```bash
-docker run -it -v /c/Metabarcoding:/data pipecraft/vsearch:2.18
+docker run -it -v  c:\Metabarcoding\MiSeq_Fungi\:/data pipecraft/vsearch:2.18
 cd /data
 ```
 
