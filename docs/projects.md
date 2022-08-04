@@ -6,6 +6,6 @@ As an expert in metabarcoding, you were invited to perform a forensic study and 
 For this purpose, please select a set of samples (or all of them) available here:<br/>
 [https://github.com/Mycology-Microbiology-Center/Metabarcoding2022/tree/main/data](https://github.com/Mycology-Microbiology-Center/Metabarcoding2022/tree/main/data)<br/>
 
-For the evaluation of the results, please fill out the following form:<br/>
+For the evaluation of the results, please fill out the following form (This is **mandatory** for students who need the course ECTs):<br/> 
 [https://forms.gle/NjBm1KSYit8mGRMq8](https://forms.gle/NjBm1KSYit8mGRMq8)<br/>
 
