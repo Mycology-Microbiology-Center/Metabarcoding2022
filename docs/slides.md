@@ -10,3 +10,16 @@
 
 [Sten Anslan - Introduction to different sequencing technologies](https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/slides/StenAnslan_Sequencing_technologies_01.08.2022.pdf)
 
+## August 02, 2022 - **Laboratory practical sessions**
+
+Niloufar Hagh Doust - Sample preparation and DNA extraction
+
+Heidi Tamm - DNA quality control and PCR preparation
+
+## August 03, 2022
+
+### *Laboratory practical sessions*
+
+Heidi Tamm - Gel electrophoresis and interpretation; Amplicon quality control for sequencing
+
+Niloufar Hagh Doust - Metabarcoding library preparation
