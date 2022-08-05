@@ -1,8 +1,10 @@
 # Metabarcoding: from Lab to Bioinformatics 
 University of Tartu, International Summer University, Tartu, 1-7 August, 2022
 
-<img src="docs/img/UT_logo.png" width="300" title="University of Tartu"/>
-<img src="docs/img/MMC_logo.png" width="300" title="Mycology and Microbiology Center"/>
+<p float="left">
+  <img src="docs/img/UT_logo.png" width="200" title="University of Tartu"/>
+  <img src="docs/img/MMC_logo.png" width="200" title="Mycology and Microbiology Center"/>
+</p>
 
 
 https://mycology-microbiology-center.github.io/Metabarcoding2022/
