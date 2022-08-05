@@ -23,3 +23,8 @@ Heidi Tamm - DNA quality control and PCR preparation
 Heidi Tamm - Gel electrophoresis and interpretation; Amplicon quality control for sequencing
 
 Niloufar Hagh Doust - Metabarcoding library preparation
+
+### *Bioinformatics practical sessions*
+
+[Sten Anslan - Metabarcoding pipeline steps](https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/slides/StenAnslan_Pipeline_steps_03.08.2022.pdf)
+
