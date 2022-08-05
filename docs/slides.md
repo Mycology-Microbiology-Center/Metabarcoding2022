@@ -1,12 +1,12 @@
 # Slides for the presentations
 
-## Sten Anslan
+## August 01, 2022
 
-[Metabarcoding pipeline steps, August 03, 2022](https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/slides/StenAnslan_Pipeline_steps_03.08.2022.pdf)
+[Leho Tedersoo - Opening lecture](https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/slides/LehoTedersoo_Welcome.pdf)
 
-## Vladimir Mikryukov
+[Sten Anslan - Introduction to metabarcoding and Basics of DNA extraction, PCR, and primer selection](https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/slides/StenAnslan_Introduction_to_Metabarcoding_01.08.2022.pdf)
 
-[Metabarcoding pipeline steps, August 03, 2022](https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/slides/VladimirMikryukov_QC_03.08.2022.pdf)
+[Sten Anslan - Workflow considerations in metabarcoding study](https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/slides/StenAnslan_Metabarcoding_Considerations_01.08.2022.pdf)
 
-["Expert mode" or command line basics / UNOISE pipeline, August 04, 2022](https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/slides/VladimirMikryukov_CommandLine_04.08.2022.pdf)
+[Sten Anslan - Introduction to different sequencing technologies](https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/slides/StenAnslan_Sequencing_technologies_01.08.2022.pdf)
 
