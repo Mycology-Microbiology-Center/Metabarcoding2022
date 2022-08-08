@@ -14,5 +14,7 @@
 [HPC basics](hpc.md)<br/>
 
 [PipeCraft2 manual](https://pipecraft2-manual.readthedocs.io/en/latest/index.html)<br/>
+[PipeCraft2 repository](https://github.com/SuvalineVana/pipecraft)<br/>
+
 [About the course](about.md)<br/>
 [Course announcement](https://ut.ee/en/content/metabarcoding-lab-bioinformatics)<br/>
