@@ -16,3 +16,7 @@ High-throughput metabarcoding methods have become a routine analysis tool in bio
 Laboratory work includes steps for sample preparation, DNA extraction, PCR and sequencing library preparation. The practical sessions are supplemented with theoretical lectures.
 
 Hands-on metabarcoding data set analyses will mostly follow PipeCraft 2 pipeline (user-friendly graphical user interface software for non-bioinformaticians) but basics of command-line interface and usage of high-performance clusters will be also covered.
+
+<p align="middle">
+:estonia::belgium::brazil::cn::croatia::de::indonesia::it::lithuania::mexico::romania::ukraine:
+</p>
