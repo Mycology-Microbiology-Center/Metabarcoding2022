@@ -38,3 +38,15 @@
 [**Vladimir Mikryukov** - "Expert mode" or command line basics / UNOISE pipeline](https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/slides/VladimirMikryukov_CommandLine_04.08.2022.pdf)
 
 
+## August 05, 2022
+
+**Sten Anslan** - Review of individual project results, Basics of ecological analyses (Ordination, PERMANOVA, Procrustes test)
+
+[**Vladimir Mikryukov** - Modern technologies in bioinformatics; HPC basics](https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/slides/VladimirMikryukov_BioinfoTechnologies_05.08.2022.pdf)
+
+**Ali Hakimzadeh** - Metabarcoding pipelines overview
+
+**Urmas Kõljalg** - The Species Hypothesis paradigm
+
+[**Kessy Abarenkov** - Data management and publishing on PlutoF platform](https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/slides/Abarenkov_DataLifeCycle_Publishing_05.08.2022.pdf)
+
