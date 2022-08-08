@@ -26,5 +26,15 @@
 
 ### *Bioinformatics practical sessions*
 
-[Sten Anslan - Metabarcoding pipeline steps](https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/slides/StenAnslan_Pipeline_steps_03.08.2022.pdf)
+[**Sten Anslan** - Metabarcoding pipeline steps](https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/slides/StenAnslan_Pipeline_steps_03.08.2022.pdf)
+
+
+## August 04, 2022
+
+**Sten Anslan** - Overview of main metabarcoding pipelines (VSEARCH and DADA2)
+
+[**Vladimir Mikryukov** - Sequencing data formats and Quality control](https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/slides/VladimirMikryukov_QC_03.08.2022.pdf)
+
+[**Vladimir Mikryukov** - "Expert mode" or command line basics / UNOISE pipeline](https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/slides/VladimirMikryukov_CommandLine_04.08.2022.pdf)
+
 
