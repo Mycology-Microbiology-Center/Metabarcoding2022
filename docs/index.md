@@ -16,5 +16,7 @@
 [PipeCraft2 manual](https://pipecraft2-manual.readthedocs.io/en/latest/index.html)<br/>
 [PipeCraft2 repository](https://github.com/SuvalineVana/pipecraft)<br/>
 
+For all PipeCraft2-related questions, please file a [GitHub issue here](https://github.com/SuvalineVana/pipecraft/issues) or just send a letter to us.
+
 [About the course](about.md)<br/>
 [Course announcement](https://ut.ee/en/content/metabarcoding-lab-bioinformatics)<br/>
