@@ -44,7 +44,7 @@
 
 [**Vladimir Mikryukov** - Modern technologies in bioinformatics; HPC basics](https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/slides/VladimirMikryukov_BioinfoTechnologies_05.08.2022.pdf)
 
-**Ali Hakimzadeh** - Metabarcoding pipelines overview
+[**Ali Hakimzadeh** - Metabarcoding pipelines overview](https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/slides/AliHakimzadeh_MetabarcodingPipelines_05.08.2022.pdf)
 
 **Urmas Kõljalg** - The Species Hypothesis paradigm
 
