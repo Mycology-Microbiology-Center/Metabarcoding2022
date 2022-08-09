@@ -46,7 +46,7 @@
 
 [**Ali Hakimzadeh** - Metabarcoding pipelines overview](https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/slides/AliHakimzadeh_MetabarcodingPipelines_05.08.2022.pdf)
 
-**Urmas Kõljalg** - The Species Hypothesis paradigm
+[**Urmas Kõljalg** - Theory and Implementation of Taxon Hypothesis. Taxa as a datasets of individuals](https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/slides/UrmasKõljalg_UNITE_SH_05.08.2022.pdf)
 
 [**Kessy Abarenkov** - Data management and publishing on PlutoF platform](https://raw.githubusercontent.com/Mycology-Microbiology-Center/Metabarcoding2022/main/slides/Abarenkov_DataLifeCycle_Publishing_05.08.2022.pdf)
 
