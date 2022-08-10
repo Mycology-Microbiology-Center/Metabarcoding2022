@@ -4,6 +4,7 @@
 <p align="middle">
   <img src="img/UT_logo.png" width="200" title="University of Tartu"/>
   <img src="img/MMC_logo.png" width="200" title="Mycology and Microbiology Center"/>
+  <img src="img/PipeCraft2_logo.png" width="200" title="PipeCraft2"/>
 </p>
 
 [**Slides**](slides.md)<br/>
