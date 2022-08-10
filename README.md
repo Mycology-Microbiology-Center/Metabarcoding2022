@@ -4,6 +4,7 @@ University of Tartu, International Summer University, Tartu, 01-05 August, 2022
 <p align="middle">
   <img src="docs/img/UT_logo.png" width="200" title="University of Tartu"/>
   <img src="docs/img/MMC_logo.png" width="200" title="Mycology and Microbiology Center"/>
+  <img src="docs/img/PipeCraft2_logo.png" width="200" title="PipeCraft2"/>
 </p>
 
 
